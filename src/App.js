@@ -3,6 +3,9 @@ import PassingProps from './Components/PassingProps';
 // import './App.css';
 
 function App() {
+  const name = 'John';
+  const age = 45;
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <PassingProps name={name} age={age} />
     </div>
   );
 }
