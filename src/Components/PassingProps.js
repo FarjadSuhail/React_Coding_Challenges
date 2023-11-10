@@ -1,9 +1,19 @@
 import React from 'react';
 
-function PassingProps() {
+// passing props
+// function PassingProps(props) {
+//     return <>
+//         <p>{props.name}</p>
+//         <p>{props.age}</p>
+//     </>
+// }
+
+// destructing props
+function PassingProps({name, age}) {
     return <>
-        <h1>abc</h1>
-        <h2>def</h2>
+    <h1>Passing Props</h1>
+        <p>Name: {name}</p>
+        <p>Age: {age}</p>
     </>
 }
 
